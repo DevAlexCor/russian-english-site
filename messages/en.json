@@ -1,0 +1,72 @@
+{
+  "Nav": {
+    "home": "Home",
+    "team": "Team",
+    "events": "Events"
+  },
+  "Hero": {
+    "title": "Russian-English Club",
+    "subtitle": "A VRChat community for language exchange",
+    "description": "We are a friendly VRChat community bringing together Russian and English speakers for language practice, cultural exchange, and fun social events. Whether you're learning Russian, English, or just want to hang out with bilingual people in virtual reality — you're welcome here!",
+    "joinButton": "Join Our VRChat Group",
+    "discordButton": "Join Discord"
+  },
+  "HelpWanted": {
+    "title": "Join Our Team",
+    "subtitle": "We're looking for passionate people to help grow the community",
+    "positions": {
+      "russianTeacher": {
+        "title": "Russian Language Teacher",
+        "description": "Help English speakers learn Russian through interactive VRChat lessons."
+      },
+      "designer": {
+        "title": "Designer",
+        "description": "Create graphics, banners, and visual content for our community."
+      },
+      "socialMedia": {
+        "title": "Social Media Manager",
+        "description": "Manage our social media presence and engage with our growing community."
+      },
+      "photographer": {
+        "title": "Event Photographer",
+        "description": "Capture memorable moments from our VRChat events and meetups to share online."
+      }
+    },
+    "contactButton": "Contact Us on Discord"
+  },
+  "Team": {
+    "title": "Our Team",
+    "subtitle": "Meet the people behind the community",
+    "members": {
+      "member1": {
+        "name": "Team Member",
+        "role": "Founder"
+      },
+      "member2": {
+        "name": "Team Member",
+        "role": "English Teacher"
+      },
+      "member3": {
+        "name": "Team Member",
+        "role": "Community Manager"
+      }
+    }
+  },
+  "Events": {
+    "title": "Weekly Events",
+    "subtitle": "Join us every week for language exchange and lessons",
+    "timezone": "All times are in Moscow time (MSK, UTC+3)",
+    "meetup": {
+      "title": "Russian-English Meetup",
+      "location": "Russian Language World"
+    },
+    "lessons": {
+      "title": "English Lessons",
+      "location": "English Hub"
+    }
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Made with love for the VRChat community"
+  }
+}
