@@ -7,17 +7,17 @@
   "Hero": {
     "title": "Russian-English Club",
     "subtitle": "A VRChat community for language exchange",
-    "description": "We are a friendly VRChat community bringing together Russian and English speakers for language practice, cultural exchange, and fun social events. Whether you're learning Russian, English, or just want to hang out with bilingual people in virtual reality — you're welcome here!",
+    "description": "Our mission is to help people learn English or Russian and build connections across the globe.",
     "joinButton": "Join Our VRChat Group",
     "discordButton": "Join Discord"
   },
   "HelpWanted": {
-    "title": "Join Our Team",
+    "title": "We Need Your Help",
     "subtitle": "We're looking for passionate people to help grow the community",
     "positions": {
       "russianTeacher": {
         "title": "Russian Language Teacher",
-        "description": "Help English speakers learn Russian through interactive VRChat lessons."
+        "description": "Help English speakers learn Russian through VRChat lessons."
       },
       "designer": {
         "title": "Designer",

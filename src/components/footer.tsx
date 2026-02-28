@@ -10,9 +10,6 @@ export function Footer() {
     <footer className="border-t py-8">
       <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
         <p>{t("madeWith")}</p>
-        <p className="mt-1">
-          &copy; {year} Russian-English Club. {t("rights")}
-        </p>
       </div>
     </footer>
   );
