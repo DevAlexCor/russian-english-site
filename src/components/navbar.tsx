@@ -20,8 +20,8 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/", label: t("home") },
-    { href: "/team", label: t("team") },
     { href: "/events", label: t("events") },
+    { href: "/team", label: t("team") },
   ] as const;
 
   return (
