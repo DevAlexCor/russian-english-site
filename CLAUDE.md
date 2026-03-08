@@ -35,12 +35,8 @@ Locale routing uses `[locale]` URL segments (`/en/...`, `/ru/...`):
 - `src/app/[locale]/layout.tsx` — locale layout with `NextIntlClientProvider`, `Navbar`, `Footer`, `generateStaticParams()`
 - `src/app/[locale]/page.tsx` — home (hero + recruitment)
 - `src/app/[locale]/team/page.tsx` — team members
-- `src/app/[locale]/events/page.tsx` — weekly calendar (FullCalendar, lazy-loaded client-side)
+- `src/app/[locale]/events/page.tsx` — simple event list (Saturday meetup, Sunday lessons)
 
 ### UI
 
 Uses shadcn/ui (New York style) with Radix UI primitives. Components in `src/components/ui/`. Tailwind CSS 4 with dark mode enabled by default. Path alias: `@/*` maps to `src/*`.
-
-### Events
-
-`src/lib/events.ts` defines recurring calendar events using rrule (Saturday meetup, Sunday lessons, Moscow timezone). The `WeeklyCalendar` component is loaded client-side only via `useEffect` + dynamic import to avoid SSR issues with FullCalendar.

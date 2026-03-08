@@ -57,12 +57,19 @@
     "subtitle": "Join us every week for language exchange and lessons",
     "timezone": "All times are in Moscow time (MSK, UTC+3)",
     "meetup": {
-      "title": "Russian-English Meetup",
-      "location": "Russian Language World"
+      "title": "Russian Language Meetup",
+      "day": "Every Saturday",
+      "time": "20:00 MSK",
+      "location": "Russian Language World",
+      "description": "A casual hangout for Russian-English language exchange. No agenda — just come and practice with native speakers and fellow learners!"
     },
     "lessons": {
-      "title": "English Lessons",
-      "location": "English Hub"
+      "title": "English Lessons for Beginners",
+      "day": "Every Sunday",
+      "time": "20:00 MSK",
+      "location": "English Hub",
+      "description": "Free beginner English classes in VRChat, taught by Boogie_Green. Join the Discord to get invitation links before each class.",
+      "detailsLink": "View lesson details & how to join"
     }
   },
   "Footer": {
