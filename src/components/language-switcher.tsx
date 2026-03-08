@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
 function RussianFlag({ className }: { className?: string }) {
@@ -28,19 +28,17 @@ function BritishFlag({ className }: { className?: string }) {
 
 export function LanguageSwitcher() {
   const locale = useLocale();
-  const router = useRouter();
+  const pathname = usePathname();
 
-  const toggleLocale = () => {
-    const newLocale = locale === "en" ? "ru" : "en";
-    document.cookie = `locale=${newLocale};path=/;max-age=31536000`;
-    router.refresh();
-  };
+  const newLocale = locale === "en" ? "ru" : "en";
+  // Replace /en/... with /ru/... or vice versa
+  const newPath = pathname.replace(`/${locale}`, `/${newLocale}`) || `/${newLocale}`;
 
   return (
+    <a href={newPath}>
     <Button
       variant="outline"
       size="sm"
-      onClick={toggleLocale}
       className="min-w-[64px] gap-2 font-semibold"
     >
       {locale === "en" ? (
@@ -53,5 +51,6 @@ export function LanguageSwitcher() {
         </>
       )}
     </Button>
+    </a>
   );
 }

@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -22,26 +18,17 @@ export const metadata: Metadata = {
     "A VRChat community for Russian-English language exchange, meetups, and lessons.",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const locale = await getLocale();
-  const messages = await getMessages();
-
   return (
-    <html lang={locale} className="dark scroll-smooth">
+    <html lang="en" className="dark scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <NextIntlClientProvider messages={messages}>
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );

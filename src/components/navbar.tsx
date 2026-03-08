@@ -1,8 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useState } from "react";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { Button } from "@/components/ui/button";
@@ -23,7 +22,7 @@ export function Navbar() {
     { href: "/", label: t("home") },
     { href: "/team", label: t("team") },
     { href: "/events", label: t("events") },
-  ];
+  ] as const;
 
   return (
     <nav className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

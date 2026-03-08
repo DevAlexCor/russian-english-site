@@ -1,18 +1,17 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-
-const WeeklyCalendar = dynamic(
-  () =>
-    import("@/components/weekly-calendar").then((mod) => ({
-      default: mod.WeeklyCalendar,
-    })),
-  { ssr: false }
-);
 
 export default function EventsPage() {
   const t = useTranslations("Events");
+  const [Calendar, setCalendar] = useState<React.ComponentType | null>(null);
+
+  useEffect(() => {
+    import("@/components/weekly-calendar").then((mod) => {
+      setCalendar(() => mod.WeeklyCalendar);
+    });
+  }, []);
 
   return (
     <section className="py-8 md:py-12">
@@ -25,7 +24,7 @@ export default function EventsPage() {
           </p>
         </div>
         <div className="mx-auto max-w-6xl">
-          <WeeklyCalendar />
+          {Calendar ? <Calendar /> : null}
         </div>
       </div>
     </section>
