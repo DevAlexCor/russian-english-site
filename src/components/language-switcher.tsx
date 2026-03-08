@@ -1,8 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { Link, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 
 function RussianFlag({ className }: { className?: string }) {
@@ -32,11 +31,9 @@ export function LanguageSwitcher() {
   const pathname = usePathname();
 
   const newLocale = locale === "en" ? "ru" : "en";
-  // Replace /en/... with /ru/... or vice versa
-  const newPath = pathname.replace(`/${locale}`, `/${newLocale}`) || `/${newLocale}`;
 
   return (
-    <Link href={newPath}>
+    <Link href={pathname} locale={newLocale}>
     <Button
       variant="outline"
       size="sm"
