@@ -2,6 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 function RussianFlag({ className }: { className?: string }) {
@@ -35,7 +36,7 @@ export function LanguageSwitcher() {
   const newPath = pathname.replace(`/${locale}`, `/${newLocale}`) || `/${newLocale}`;
 
   return (
-    <a href={newPath}>
+    <Link href={newPath}>
     <Button
       variant="outline"
       size="sm"
@@ -51,6 +52,6 @@ export function LanguageSwitcher() {
         </>
       )}
     </Button>
-    </a>
+    </Link>
   );
 }
