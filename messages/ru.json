@@ -38,17 +38,21 @@
     "title": "Наша команда",
     "subtitle": "Познакомьтесь с людьми, стоящими за сообществом",
     "members": {
-      "member1": {
-        "name": "Участник команды",
-        "role": "Основатель"
+      "alex": {
+        "name": "Alex",
+        "role": "Основатель и создатель English Hub"
       },
-      "member2": {
-        "name": "Участник команды",
+      "ravida": {
+        "name": "Ravida",
+        "role": "Сооснователь"
+      },
+      "andrey04o": {
+        "name": "Andrey04o",
+        "role": "Создатель мира Russian Language"
+      },
+      "boogieGreen": {
+        "name": "Boogie_Green",
         "role": "Преподаватель английского"
-      },
-      "member3": {
-        "name": "Участник команды",
-        "role": "Менеджер сообщества"
       }
     }
   },

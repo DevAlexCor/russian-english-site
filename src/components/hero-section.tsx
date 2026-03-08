@@ -7,8 +7,15 @@ export function HeroSection() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="py-24 md:py-32">
-      <div className="container mx-auto px-4 text-center">
+    <section className="relative overflow-hidden py-24 md:py-32">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/russian-english-site/community.png"
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-40"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-background/30" />
+      <div className="container relative mx-auto px-4 text-center">
         <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl">
           {t("title")}
         </h1>

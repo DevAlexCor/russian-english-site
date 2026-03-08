@@ -32,23 +32,28 @@
         "description": "Capture memorable moments from our VRChat events and meetups to share online."
       }
     },
-    "contactButton": "Contact Us on Discord"
+    "contactButton": "Contact Us on Discord",
+    "communityPhoto": "Our community meeting in VRChat"
   },
   "Team": {
     "title": "Our Team",
     "subtitle": "Meet the people behind the community",
     "members": {
-      "member1": {
-        "name": "Team Member",
-        "role": "Founder"
+      "alex": {
+        "name": "Alex",
+        "role": "Founder & Creator of English Hub"
       },
-      "member2": {
-        "name": "Team Member",
+      "ravida": {
+        "name": "Ravida",
+        "role": "Co-Founder"
+      },
+      "andrey04o": {
+        "name": "Andrey04o",
+        "role": "Creator of Russian Language World"
+      },
+      "boogieGreen": {
+        "name": "Boogie_Green",
         "role": "English Teacher"
-      },
-      "member3": {
-        "name": "Team Member",
-        "role": "Community Manager"
       }
     }
   },

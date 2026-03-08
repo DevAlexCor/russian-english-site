@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   output: "export",
   distDir: "docs",
   basePath: "/russian-english-site",
+  images: { unoptimized: true },
 };
 
 const withNextIntl = createNextIntlPlugin();

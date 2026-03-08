@@ -4,11 +4,9 @@ import { useTranslations } from "next-intl";
 import { HeroSection } from "@/components/hero-section";
 import { PositionCard } from "@/components/position-card";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 
 const positionKeys = [
   "russianTeacher",
-  "designer",
   "socialMedia",
   "photographer",
 ] as const;
@@ -19,8 +17,6 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-
-      <Separator />
 
       {/* Help Wanted Section */}
       <section className="py-20">

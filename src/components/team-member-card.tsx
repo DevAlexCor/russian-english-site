@@ -7,14 +7,20 @@ import {
 interface TeamMemberCardProps {
   name: string;
   role: string;
+  image: string;
 }
 
-export function TeamMemberCard({ name, role }: TeamMemberCardProps) {
+export function TeamMemberCard({ name, role, image }: TeamMemberCardProps) {
   return (
     <Card className="text-center">
       <CardHeader className="items-center pb-2">
-        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-3xl text-primary">
-          {name.charAt(0)}
+        <div className="w-full overflow-hidden rounded-2xl">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={image}
+            alt={name}
+            className="h-72 w-full object-cover"
+          />
         </div>
       </CardHeader>
       <CardContent>
