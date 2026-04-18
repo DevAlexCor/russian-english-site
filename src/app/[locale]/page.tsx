@@ -65,14 +65,6 @@ export default function HomePage() {
               <p className="mt-4 text-sm">{tEvents("lessons.description")}</p>
               <div className="mt-3 flex flex-col gap-2">
                 <a
-                  href="https://devalexcor.github.io/english-lessons/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-primary underline underline-offset-4 hover:text-primary/80"
-                >
-                  {tEvents("lessons.detailsLink")}
-                </a>
-                <a
                   href="https://t.me/bolat_english"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -89,6 +81,15 @@ export default function HomePage() {
                   {tEvents("lessons.youtubeLink")}
                 </a>
               </div>
+              <Button className="mt-6 w-full" asChild>
+                <a
+                  href="https://devalexcor.github.io/english-lessons/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {tEvents("lessons.detailsLink")}
+                </a>
+              </Button>
             </div>
           </div>
         </div>
