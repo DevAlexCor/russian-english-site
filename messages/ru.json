@@ -1,6 +1,5 @@
 {
   "Nav": {
-    "home": "Главная",
     "team": "Команда",
     "events": "Мероприятия"
   },
@@ -9,8 +8,7 @@
     "subtitle": "Сообщество VRChat для изучения английского",
     "description": "Наша миссия — помогать людям учить английский и заводить знакомства по всему миру.",
     "joinButton": "Присоединиться в VRChat",
-    "discordButton": "Присоединиться в Discord",
-    "telegramButton": "Telegram-канал"
+    "discordButton": "Присоединиться в Discord"
   },
   "HelpWanted": {
     "title": "Нам нужна ваша помощь",
@@ -41,7 +39,7 @@
       },
       "ravida": {
         "name": "Ravida",
-        "role": "Сооснователь"
+        "role": "Главный помощник и душа сообщества"
       },
       "andrey04o": {
         "name": "Andrey04o",
@@ -64,7 +62,8 @@
       "location": "English Hub",
       "description": "Бесплатные уроки английского для начинающих в VRChat. Преподаватель — Boogie_Green. Присоединяйтесь в Discord, чтобы получить ссылки-приглашения перед каждым занятием.",
       "detailsLink": "Подробности и как присоединиться",
-      "telegramLink": "Telegram-канал Boogie_Green"
+      "telegramLink": "Telegram-канал Boogie_Green",
+      "youtubeLink": "YouTube-канал Boogie_Green"
     }
   },
   "Footer": {

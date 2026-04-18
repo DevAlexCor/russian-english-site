@@ -1,6 +1,5 @@
 {
   "Nav": {
-    "home": "Home",
     "team": "Team",
     "events": "Events"
   },
@@ -9,8 +8,7 @@
     "subtitle": "A VRChat community for learning English",
     "description": "Our mission is to help people learn English and build connections across the globe.",
     "joinButton": "Join Our VRChat Group",
-    "discordButton": "Join Discord",
-    "telegramButton": "Telegram Channel"
+    "discordButton": "Join Discord"
   },
   "HelpWanted": {
     "title": "We Need Your Help",
@@ -42,7 +40,7 @@
       },
       "ravida": {
         "name": "Ravida",
-        "role": "Co-Founder"
+        "role": "Lead helper & soul of the community"
       },
       "andrey04o": {
         "name": "Andrey04o",
@@ -65,7 +63,8 @@
       "location": "English Hub",
       "description": "Free beginner English classes in VRChat, taught by Boogie_Green. Join the Discord to get invitation links before each class.",
       "detailsLink": "View lesson details & how to join",
-      "telegramLink": "Boogie_Green's Telegram channel"
+      "telegramLink": "Boogie_Green's Telegram channel",
+      "youtubeLink": "Boogie_Green's YouTube channel"
     }
   },
   "Footer": {

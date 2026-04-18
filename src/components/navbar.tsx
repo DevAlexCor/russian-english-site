@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { useState } from "react";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { Button } from "@/components/ui/button";
@@ -11,17 +11,14 @@ import {
   SheetTrigger,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const t = useTranslations("Nav");
-  const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: t("home") },
-    { href: "/events", label: t("events") },
-    { href: "/team", label: t("team") },
+    { href: "#events", label: t("events") },
+    { href: "#team", label: t("team") },
   ] as const;
 
   return (
@@ -34,18 +31,13 @@ export function Navbar() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.href}
               href={link.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
-                pathname === link.href
-                  ? "text-primary"
-                  : "text-muted-foreground"
-              )}
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
           <LanguageSwitcher />
         </div>
@@ -75,19 +67,14 @@ export function Navbar() {
               <SheetTitle className="text-primary">RU-EN Club</SheetTitle>
               <nav className="mt-6 flex flex-col gap-4">
                 {navLinks.map((link) => (
-                  <Link
+                  <a
                     key={link.href}
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className={cn(
-                      "text-lg font-medium transition-colors hover:text-primary",
-                      pathname === link.href
-                        ? "text-primary"
-                        : "text-muted-foreground"
-                    )}
+                    className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary"
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
               </nav>
             </SheetContent>

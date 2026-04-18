@@ -33,11 +33,6 @@ export function HeroSection() {
               {t("discordButton")}
             </a>
           </Button>
-          <Button size="lg" variant="outline" asChild>
-            <a href="https://t.me/bolat_english" target="_blank" rel="noopener noreferrer">
-              {t("telegramButton")}
-            </a>
-          </Button>
         </div>
       </div>
     </section>
