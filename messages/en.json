@@ -6,19 +6,16 @@
   },
   "Hero": {
     "title": "Russian-English Club",
-    "subtitle": "A VRChat community for language exchange",
-    "description": "Our mission is to help people learn English or Russian and build connections across the globe.",
+    "subtitle": "A VRChat community for learning English",
+    "description": "Our mission is to help people learn English and build connections across the globe.",
     "joinButton": "Join Our VRChat Group",
-    "discordButton": "Join Discord"
+    "discordButton": "Join Discord",
+    "telegramButton": "Telegram Channel"
   },
   "HelpWanted": {
     "title": "We Need Your Help",
     "subtitle": "We're looking for passionate people to help grow the community",
     "positions": {
-      "russianTeacher": {
-        "title": "Russian Language Teacher",
-        "description": "Help English speakers learn Russian through VRChat lessons."
-      },
       "designer": {
         "title": "Designer",
         "description": "Create graphics, banners, and visual content for our community."
@@ -59,22 +56,16 @@
   },
   "Events": {
     "title": "Weekly Events",
-    "subtitle": "Join us every week for language exchange and lessons",
+    "subtitle": "Join us every week for free English lessons",
     "timezone": "All times are in Moscow time (MSK, UTC+3)",
-    "meetup": {
-      "title": "Russian Language Meetup",
-      "day": "Every Saturday",
-      "time": "20:00 MSK",
-      "location": "Russian Language World",
-      "description": "A casual hangout for Russian-English language exchange. No agenda — just come and practice with native speakers and fellow learners!"
-    },
     "lessons": {
       "title": "English Lessons for Russian Speakers",
       "day": "Every Sunday",
       "time": "20:00 MSK",
       "location": "English Hub",
       "description": "Free beginner English classes in VRChat, taught by Boogie_Green. Join the Discord to get invitation links before each class.",
-      "detailsLink": "View lesson details & how to join"
+      "detailsLink": "View lesson details & how to join",
+      "telegramLink": "Boogie_Green's Telegram channel"
     }
   },
   "Footer": {

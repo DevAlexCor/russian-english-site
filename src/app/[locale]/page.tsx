@@ -6,7 +6,7 @@ import { PositionCard } from "@/components/position-card";
 import { Button } from "@/components/ui/button";
 
 const positionKeys = [
-  "russianTeacher",
+  "designer",
   "socialMedia",
   "photographer",
 ] as const;

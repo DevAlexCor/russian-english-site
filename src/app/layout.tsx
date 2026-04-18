@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Russian-English Club | VRChat Community",
   description:
-    "A VRChat community for Russian-English language exchange, meetups, and lessons.",
+    "A VRChat community for learning English — free weekly lessons and practice.",
 };
 
 export default function RootLayout({
